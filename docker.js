@@ -27,7 +27,7 @@ docker ps -q | % { docker stop $_ }
 minkube status
 
 minkube start
-
+   
 // start pod
 kubectl apply -f client-pod.yml
 // start service
