@@ -1,7 +1,7 @@
 echo "start deploy"
-docker build -t oronasaf123/mulit-client:latest  -t oronasaf123/mulit-client:$SHA -f ./client/Dockerfile ./client
+docker build -t oronasaf123/multi-client:latest  -t oronasaf123/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t oronasaf123/multi-server:latest  -t oronasaf123/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t oronasaf123/multi-worker:latest  -t oronasaf123/multi-worker:$SHA-f ./worker/Dockerfile ./worker
+docker build -t oronasaf123/multi-worker:latest  -t oronasaf123/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push oronasaf123/multi-client:latest
 docker push oronasaf123/multi-server:latest
 docker push oronasaf123/multi-worker:latest
