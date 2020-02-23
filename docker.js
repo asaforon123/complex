@@ -57,4 +57,9 @@ kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
 // see secrets
 kubectl get secrets
 
+// install travis cli 
 
+gem install travis
+
+travis login --pro
+travis encrypt-file service.json -r USERNAME/REPO --pro
