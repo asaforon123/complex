@@ -1,4 +1,4 @@
-akind: PersistentVolumeClaim
+kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: database-persistent-volume-claim
